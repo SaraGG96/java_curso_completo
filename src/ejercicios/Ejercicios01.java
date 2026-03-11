@@ -1,9 +1,4 @@
-/* 
-Clase 14 - Ejercicios: Primeros pasos
-Vídeo: https://youtu.be/JOAqpdM36wI?t=5108
-*/
-
-public class HelloWorldExercises {
+public class Ejercicios01 {
 
     public static void main(String[] args) {
 
