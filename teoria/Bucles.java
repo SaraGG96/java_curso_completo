@@ -100,11 +100,21 @@ public class Bucles {
             index++;
         } while (index < 5);
 
+        for (String name: names) {
+            if (name.equals("Sara")) {
+                break;
+            }
+            System.out.println(name);
+        }
 
+        //continue
 
-
-
-
+        for (int i = 0; i < 5; i++) {
+            if (i == 3) {
+                continue;
+            }
+            System.out.println(i);
+        };
 
 
 
