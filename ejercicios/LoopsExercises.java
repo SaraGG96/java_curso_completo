@@ -1,4 +1,10 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class LoopsExercises {
 
@@ -45,14 +51,62 @@ public class LoopsExercises {
         };
 
         // 6. Usa for-each para recorrer un HashSet y un HashMap.
-        
+        Map<Integer, Integer> maps = Map.of(
+            10, 1,
+            20, 2,
+            30, 3,
+            40, 4,
+            50, 5
+        );
+
+        Set<Integer> sets = Set.of(
+            1,
+            2,
+            3,
+            4,
+            5
+        );
+
+        for (Map.Entry<Integer, Integer> map: maps.entrySet()) {
+            System.out.println(map);
+        }
+
+        for (Integer set: sets) {
+            System.out.println(set);
+        }
+
 
         // 7. Imprime los números del 10 al 1 (descendiente) con un bucle for.
+        for (int ej7 = 10; ej7 >= 1; ej7 -= 1) {
+            System.out.println(ej7);
+        }
 
         // 8. Usa continue para saltar los múltiplos de 3 del 1 al 20.
+        for (int ej8 = 0; ej8 <= 20; ej8 += 1) {
+            if (ej8 % 3 == 0) {
+                continue;
+            }
+            System.out.println("ejercicio8: " + ej8);
+        }
 
         // 9. Usa break para detener un bucle cuando encuentres un número negativo en un array.
+        int[] ej9 = {1, -1, 2, -2, 3, -3, 4, -4, 5, -5};
+
+        // 8. Usa continue para saltar los múltiplos de 3 del 1 al 20.
+        for (int numero: ej9) {
+            if (numero < 0) {
+                break;
+            }
+            System.out.println("ejercicio9: " + numero);
+        }
 
         // 10. Crea un programa que calcule el factorial de un número dado.
+        int factorial = 1;
+        for (int ej10 = 1; ej10 <= 5; ej10++) {
+            factorial *= ej10;
+        }
+        System.out.println("Factorial de 5: " + factorial);
+
+ 
     }
 }
