@@ -1,0 +1,7 @@
+package Herencia;
+
+public class Manager extends Employee {
+
+    String department;
+    
+}

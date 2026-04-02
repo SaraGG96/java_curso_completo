@@ -1,3 +1,5 @@
+package Clases;
+
 public class Dog {
 
     public Dog() {};

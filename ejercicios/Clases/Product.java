@@ -1,3 +1,5 @@
+package Clases;
+
 public class Product {
     
     String name;
